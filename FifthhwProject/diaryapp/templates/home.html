@@ -1,4 +1,4 @@
-{% for diary in diary.all %}
+{% for diary in diaries.all %}
     <h1> {{diary.title}} </h1>
     <p> {{diary.pub_date}} </p>
     <p> 본문 미리보기 : {{diary.summary}}<a href="{%url 'detail' diary.id%}">...more</a> </p>
