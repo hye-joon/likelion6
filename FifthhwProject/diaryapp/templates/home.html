@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends 'base.html' %}
 {% block content %}
 
@@ -6,13 +5,6 @@
 <h1> 제목 : {{diary.title}} </h1>
 <p> 날짜 : {{diary.pub_date}} </p>
 <p> 본문 미리보기 : {{diary.summary}}<a href="{%url 'detail' diary.id%}">...more</a> </p>
-=======
-{% for diary in diaries.all %}
-    <h1> {{diary.title}} </h1>
-    <p> {{diary.pub_date}} </p>
-    <p> 본문 미리보기 : {{diary.summary}}<a href="{%url 'detail' diary.id%}">...more</a> </p>
-    <br><br>
->>>>>>> e3fccd73ea2eaf11e61a0e500e1f2fc59b91b042
 {% endfor %}
 
 {% endblock %}
